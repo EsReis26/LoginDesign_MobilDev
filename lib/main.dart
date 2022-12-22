@@ -107,27 +107,45 @@ class _LoginState extends State<Login> {
           ),
           ElevatedButton(
             onPressed: () {},
-            child: Text('Sıgn In',style: TextStyle(color: Colors.grey,fontStyle: FontStyle.italic),),
+            child: Text(
+              'Sıgn In',
+              style: TextStyle(color: Colors.grey, fontStyle: FontStyle.italic),
+            ),
             style: ButtonStyle(
               backgroundColor: MaterialStatePropertyAll(Colors.blueGrey[800]),
             ),
           ),
-          SizedBox(height: 20,),
-          Padding(padding: EdgeInsets.only(left: 150),
-          child: Text('Creat an account ',style: TextStyle(
-            color: Colors.black54,fontSize: 20,
-            decoration: TextDecoration.underline,
-            
-          ),),),
-          OutlinedButton(onPressed: (){}, child:Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.g_mobiledata_sharp,color: Colors.black,),
-              Text('Sıgn ın with google',style: TextStyle(color: Colors.black54 ,fontSize: 16),),
-            ],
-          ),style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Colors.blueGrey)
+          SizedBox(
+            height: 20,
           ),
+          Padding(
+            padding: EdgeInsets.only(left: 150),
+            child: Text(
+              'Creat an account ',
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 20,
+                decoration: TextDecoration.underline,
+              ),
+            ),
+          ),
+          OutlinedButton(
+            onPressed: () {},
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.g_mobiledata_sharp,
+                  color: Colors.black,
+                ),
+                Text(
+                  'Sıgn ın with google',
+                  style: TextStyle(color: Colors.black54, fontSize: 16),
+                ),
+              ],
+            ),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.blueGrey)),
           ),
         ],
       ),
